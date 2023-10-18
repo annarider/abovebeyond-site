@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Above and Beyond Data"
 title_separator          : "—"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Above and Beyond Data LLC"
 description              : "A data consultancy hyperfocused on your data quality so you can spend all your time focused on serving your customers better"
 url                      : https://abovebeyonddata.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
