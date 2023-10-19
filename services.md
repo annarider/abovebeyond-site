@@ -6,9 +6,30 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/placeholder-photo.jpg
 excerpt:
-    How we can help you
+    How we can serve you
 ---
 
-## D
-- Is your model out of date since the software has released major improvements? 
-- Did the original systems integrator 
+## Does this sound familiar?
+
+- Business users are interested in what we're doing. How can we expand our implementation and get wider adoption?
+- How can I add a new data set to my data catalog? 
+- How can I profile the data quality in a new system? 
+- How can I set up workflows so business users feel in control of authoring data in the system while encouraging better data quality?
+- How can I set up the UI to become self-serve so business users want to search for data and improve the data quality? 
+- How can I optimize my model for faster performance, especially around matching and completing integration loads? 
+- How do I incorporate advanced enrichment, including adding GIS data or address cleansing solutions?
+- Is your model out of date since the software has released major improvements?
+
+We're here to help you avoid digging through theoretical technical documentation or getting stuck in hours of trial and error only to feel frustrated that your configuration still isn't working. We can help you get predictable results and show you exactly what works for your data, industry, and unique requirements.   
+
+### Find out how we can help you with:
+- training on advanced topics
+- model configuration
+- best practices
+- fine-tuning your system
+- learn about new features you're missing out on
+- getting a second opinion or a fresh pair of eyes before going to production
+
+---
+
+{% include contact-bar.md %}
