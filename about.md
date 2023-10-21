@@ -22,6 +22,8 @@ Check out what services we offer and how they can help you.
 
 [Learn about our services](/services/){: .btn .btn--info}
 
+---
+
 ### Who are we? 
 
 #### Gian Di Loreto
