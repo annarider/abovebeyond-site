@@ -5,6 +5,21 @@ search: false
 
 @charset "utf-8";
 
+/* Customize color options */
+$body-color: #284471;
+$text-color: #15243C;
+$link-color: #3B64A5;
+$masthead-link-color: #15243C;
+$border-color: #EBF5FF;
+
+$primary-color: #15243C !default;
+$success-color: #00A6A6 !default;
+$warning-color: #F0B914 !default;
+$danger-color: #D33F49 !default;
+$info-color: #3B64A5 !default;
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
+
 
 /* Headshot biography images */
 .img-headshot {
@@ -13,6 +28,9 @@ search: false
     margin: 15px;
   } 
 
+.contact-bar {
+  background-color: #EBF5FF;
+}  
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
