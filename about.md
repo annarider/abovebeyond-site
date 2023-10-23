@@ -3,8 +3,8 @@ layout: single
 permalink: /about/
 title: "About Us"
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/placeholder-photo.jpg
+  overlay_color: "#15243C"
+  overlay_image: /assets/images/background-blue-gradient.png
 excerpt:
     Your technical partner to clean data
 ---
@@ -36,6 +36,7 @@ My experience includes implementing several large scale data stewardship/data go
 
 I have a lifetime of programming experience, beginning when I was 12 years old, and can code in Java/ Eclipse, C#, .Net Visual Studio, SQL, WCF, REST/SOAP API.
 
+Connect with Gian on [LinkedIn](https://www.linkedin.com/in/gian-di-loreto-phd).
 
 #### Anna Rider
 
@@ -44,5 +45,7 @@ I have a lifetime of programming experience, beginning when I was 12 years old, 
 I spent over 7 years working at Semarchy where I worked with customers in financial services, insurance, logistics, oil and gas, restaurants, higher education, and healthcare. I've built data models to meet business requirements, including advanced filtering, hierarchy configuration, and external enrichment. 
 
 I believe in spending time on making the UI beautiful so business users enjoy using the app, which ultimately improves your data quality. Helping you improve your data quality and boosting the business's trust in data are important values to me because data are now foundational to good business decision making. 
-     
 
+Check out my approach to [building a Data Hub on the AWS Blog](https://aws.amazon.com/blogs/apn/building-a-single-source-of-truth-with-a-data-hub-from-semarchy/).
+     
+Connect with Anna on [LinkedIn](https://www.linkedin.com/in/annarider/). 
