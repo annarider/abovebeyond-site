@@ -30,7 +30,7 @@ h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 100;
 }
 
 h1 {
@@ -294,6 +294,7 @@ nav {
 
   a {
     text-decoration: none;
+    font-weight: 100;
   }
 
   /* override white-space for nested lists */
