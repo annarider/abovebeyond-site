@@ -20,7 +20,6 @@ $info-color: #3B64A5 !default;
 $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
 
-
 /* Headshot biography images */
 .img-headshot {
     border-radius: 50%;
@@ -30,7 +29,10 @@ $active-color: mix(#fff, $primary-color, 80%) !default;
 
 .contact-bar {
   background-color: #EBF5FF;
-}  
+  width: 100%;
+}
+
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
