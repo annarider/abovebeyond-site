@@ -4,7 +4,7 @@ permalink: /services/
 title: "What we offer"
 header:
   overlay_color: "#15243C"
-  overlay_image: /assets/images/background-blue-gradient.png
+  overlay_image: /assets/images/splash-services.svg
 excerpt:
     How we can serve you
 feature_row:
