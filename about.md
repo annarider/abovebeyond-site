@@ -4,7 +4,7 @@ permalink: /about/
 title: "About Us"
 header:
   overlay_color: "#15243C"
-  overlay_image: /assets/images/background-blue-gradient.png
+  overlay_image: /assets/images/splash-about.svg
 excerpt:
     Your technical partner to clean data
 ---
