@@ -8,15 +8,15 @@ header:
 excerpt:
     How we can serve you
 feature_row:
-  - image_path: /assets/images/background-blue-gradient.png
+  - image_path: /assets/images/services-advisory-consulting.svg
     alt: "customizable"
     title: "Advisory consulting"
     excerpt: "Solve new data problems using your existing software products. Gain insights on how companies in your industry are leveraging data management platforms."
-  - image_path: /assets/images/background-blue-gradient.png
+  - image_path: /assets/images/services-project-resources.svg
     alt: ""
     title: "Project resources"
     excerpt: "Supplement your team with our expert services to build advanced data models, fine-tune rules, and fill skill gaps."
-  - image_path: /assets/images/background-blue-gradient.png
+  - image_path: /assets/images/services-specialized-training.svg
     alt: ""
     title: "Specialized training"
     excerpt: "Expand adoption at your organization with a custom training for developers or business users to ensure your teams know how to use your applications."
