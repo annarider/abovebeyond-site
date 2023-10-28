@@ -30,7 +30,7 @@ Check out what services we offer and how they can help you.
 
 ![Gian's headshot](/assets/images/gian-headshot.jpg){: .img-headshot}
 
-A Data Engineer with 15 years of experience as a research scientist and over 20 years experience working on large scale data, Business Process Optimization, data conversion, data cleansing, and ongoing data quality control projects. I have 8 years of experience in Master Data Management, including at Profisee (a Microsoft's SQL-based MDM solution) and Semarchy (working with xDM, a modern data management platform). I currently work at Dun & Bradstreet as a Senior Solution Architect. 
+Wth 15 years of experience as a research scientist and data engineer and over 20 years experience working on large scale data, Business Process Optimization, data conversion, data cleansing, and ongoing data quality control projects, I have 8 years of experience in Master Data Management, including at Profisee (a Microsoft's SQL-based MDM solution) and Semarchy (working with xDM, a modern data management platform). I currently work at Dun & Bradstreet as a Senior Solution Architect. 
 
 My experience includes implementing several large scale data stewardship/data governance programs at Fortune 500 companies. I've delivered solutions for big companies, such as Honeywell, Citi, Mars, and Kaiser Permenante. 
 
@@ -42,7 +42,7 @@ Connect with Gian on [LinkedIn](https://www.linkedin.com/in/gian-di-loreto-phd).
 
 ![Anna's headshot](/assets/images/anna-headshot.jpg){: .img-headshot}
 
-I spent over 7 years working at Semarchy where I worked with customers in financial services, insurance, logistics, oil and gas, restaurants, higher education, and healthcare. I've built data models to meet business requirements, including advanced filtering, hierarchy configuration, and external enrichment. 
+After over 7 years working at Semarchy, I worked with customers in financial services, insurance, logistics, oil and gas, restaurants, higher education, and healthcare. I've built data models to meet business requirements, including advanced filtering, hierarchy configuration, and external enrichment. 
 
 I believe in spending time on making the UI beautiful so business users enjoy using the app, which ultimately improves your data quality. Helping you improve your data quality and boosting the business's trust in data are important values to me because data are now foundational to good business decision making. 
 
