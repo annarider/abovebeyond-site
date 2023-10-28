@@ -32,6 +32,9 @@ $active-color: mix(#fff, $primary-color, 80%) !default;
   width: 100%;
 }
 
+[data-form="b3e8b54c-742a-11ee-955b-4f946d2b2bf0"].inline-container {
+  max-width: 100% !important;
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

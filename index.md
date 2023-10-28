@@ -38,5 +38,3 @@ feature_row:
 {% include feature_row %}
 
 {% include contact-bar.md %}
-
-{% include optin-email-form.html %}
