@@ -26,7 +26,7 @@ Check out what services we offer and how they can help you.
 
 ### Who are we? 
 
-#### Gian Di Loreto
+#### Gian Di Loreto, Ph.D.
 
 ![Gian's headshot](/assets/images/gian-headshot.jpg){: .img-headshot}
 
