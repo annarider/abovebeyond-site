@@ -30,7 +30,7 @@ Check out what services we offer and how they can help you.
 
 ![Gian's headshot](/assets/images/gian-headshot.jpg){: .img-headshot}
 
-Wth 15 years of experience as a research scientist and data engineer and over 20 years experience working on large scale data, Business Process Optimization, data conversion, data cleansing, and ongoing data quality control projects, I have 8 years of experience in Master Data Management, including at Profisee (a Microsoft's SQL-based MDM solution) and Semarchy (working with xDM, a modern data management platform). I currently work at Dun & Bradstreet as a Senior Solution Architect. 
+With 15 years of experience as a research scientist and data engineer and over 20 years experience working on large scale data, Business Process Optimization, data conversion, data cleansing, and ongoing data quality control projects, I have 8 years of experience in Master Data Management, including at Profisee (a Microsoft's SQL-based MDM solution) and Semarchy (working with xDM, a modern data management platform). I currently work at Dun & Bradstreet as a Senior Solution Architect. 
 
 My experience includes implementing several large scale data stewardship/data governance programs at Fortune 500 companies. I've delivered solutions for big companies, such as Honeywell, Citi, Mars, and Kaiser Permenante. 
 
