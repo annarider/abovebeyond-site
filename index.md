@@ -29,7 +29,7 @@ feature_row:
   - image_path: /assets/images/homepage-trust-data.svg
     alt: "100% free"
     title: "Trust your data"
-    excerpt: "MDM can feel like a black box but it doesn’t have to. Feel confident you understand your system and how to fine-tune it, so you can clean, consolidate, and finally trust your data to make the best business decisions."
+    excerpt: "Garbage in, garbage out: AI/ML rely on high-quality data to provide effective answers. Feel confident your data is correctly catalogued, enriched, and consolidated, so that you can trust your data and models to make the best business decisions."
     # url: "/docs/license/"
     # btn_class: "btn--primary"
     # btn_label: "Learn more"      

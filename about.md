@@ -9,9 +9,9 @@ excerpt:
     Your technical partner to clean data
 ---
 
-Navigating MDM and Data Quality often feels like blindly bumping into trees in a dense forest. What if we gave you a map that shows you the most efficient route to your destination?
+Navigating Data Governance and Data Quality often feels like blindly bumping into trees in a dense forest. What if we gave you a map that shows you the most efficient route to your destination?
 
-Above and Beyond Data serves clients who want to optimize their MDM, Data Quality, and Data Catalog systems so they can perform at their maximum potential.
+Above and Beyond Data serves clients who want to optimize their enterprise data and systems so they can perform at their maximum potential.
 
 ### How we work
 - Listening closely to our clients is our secret sauce 
@@ -44,7 +44,7 @@ Connect with Gian on [LinkedIn](https://www.linkedin.com/in/gian-di-loreto-phd).
 
 After over 7 years working at Semarchy, I worked with customers in financial services, insurance, logistics, oil and gas, restaurants, higher education, and healthcare. I've built data models to meet business requirements, including advanced filtering, hierarchy configuration, and external enrichment. 
 
-I believe in spending time on making the UI beautiful so business users enjoy using the app, which ultimately improves your data quality. Helping you improve your data quality and boosting the business's trust in data are important values to me because data are now foundational to good business decision making. 
+Having this deep experience in Master Data Management and data quality solutions, I believe in spending time making the UI beautiful so business users enjoy using the app, which ultimately improves your data quality. Helping you improve your data quality and boosting the business's trust in data are important values to me because data are now foundational to good business decision making. 
 
 Check out my approach to [building a Data Hub on the AWS Blog](https://aws.amazon.com/blogs/apn/building-a-single-source-of-truth-with-a-data-hub-from-semarchy/).
      
