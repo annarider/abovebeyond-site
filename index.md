@@ -28,8 +28,8 @@ feature_row:
     # btn_label: "Learn more"
   - image_path: /assets/images/homepage-trust-data.svg
     alt: "100% free"
-    title: "Trust your data"
-    excerpt: "Garbage in, garbage out: AI/ML rely on high-quality data to provide effective answers. Feel confident your data is correctly catalogued, enriched, and consolidated, so that you can trust your data and models to make the best business decisions."
+    title: "Garbage in, garbage out"
+    excerpt: "AI/ML rely on high-quality data to provide effective answers. Cataloging, enriching, and consolidating your data means you can trust that accurate data is feeding your models, allowing you to make the best business decisions."
     # url: "/docs/license/"
     # btn_class: "btn--primary"
     # btn_label: "Learn more"      
