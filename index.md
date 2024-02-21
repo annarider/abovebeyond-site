@@ -28,7 +28,7 @@ feature_row:
     # btn_label: "Learn more"
   - image_path: /assets/images/homepage-trust-data.svg
     alt: "100% free"
-    title: "Fix the "garbage in, garbage out" problem"
+    title: "Fix the garbage-in-garbage-out problem"
     excerpt: "AI/ML rely on high-quality data to provide effective answers. Cataloging, enriching, and consolidating your data means you can trust that accurate data is feeding your models, allowing you to make the best business decisions."
     # url: "/docs/license/"
     # btn_class: "btn--primary"
