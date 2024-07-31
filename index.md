@@ -37,4 +37,6 @@ feature_row:
 
 {% include feature_row %}
 
+{% include customers.md %}
+
 {% include contact-bar.md %}
