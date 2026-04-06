@@ -33,6 +33,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - docs
+  - test
 keep_files:
   - .git
   - .svn
