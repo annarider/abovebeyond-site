@@ -1,41 +1,40 @@
----
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  {% seo %}
+</head>
+<body>
 
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
-
-    <div class="initial-content">
-      {{ content }}
+  <nav class="site-nav" id="site-nav">
+    <div class="site-nav__inner">
+      <a href="{{ '/' | relative_url }}" class="site-nav__brand">
+        <img src="{{ '/assets/images/abd-logo.png' | relative_url }}" alt="above and beyond data" class="site-nav__logo">
+      </a>
+      <button class="site-nav__toggle" aria-label="Toggle menu" onclick="document.querySelector('.site-nav__links').classList.toggle('is-open')">☰</button>
+      <ul class="site-nav__links">
+        <li><a href="{{ '/services/' | relative_url }}" {% if page.url contains '/services' %}class="active"{% endif %}>Services</a></li>
+        <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}class="active"{% endif %}>Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
+  <main id="main">
+    {{ content }}
+  </main>
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">above and beyond <strong>data</strong> llc</div>
+      <div class="site-footer__copy">&copy; {{ 'now' | date: '%Y' }} Above and Beyond Data LLC</div>
     </div>
+  </footer>
 
-    {% include scripts.html %}
-
-  </body>
+</body>
 </html>
