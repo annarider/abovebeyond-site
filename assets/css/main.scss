@@ -58,26 +58,27 @@ p:last-child { margin-bottom: 0; }
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 0 48px;
 }
 
 .site-nav__inner {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 64px;
 }
 
-.site-nav__logo {
-  height: 36px;
-  width: auto;
-}
-
 .site-nav__brand {
-  display: flex;
-  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  text-decoration: none;
+  strong { font-weight: 700; color: var(--gold); }
+  &:hover { color: var(--white); }
 }
 
 .site-nav__links {
@@ -437,6 +438,238 @@ p:last-child { margin-bottom: 0; }
   margin-top: 2px;
 }
 
+/* ── MDM BROCHURE: PILLARS ───────────────────────────────────── */
+.pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  margin-top: 40px;
+  border: 2px solid var(--navy-deep);
+}
+.pillar {
+  padding: 32px 28px;
+  background: var(--white);
+  border-right: 2px solid var(--navy-deep);
+}
+.pillar:last-child { border-right: none; }
+.pillar-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.pillar h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy-deep);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pillar p { font-size: 14px; line-height: 1.7; color: var(--text-mid); }
+
+/* ── MDM BROCHURE: PHASES ────────────────────────────────────── */
+.phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 40px;
+}
+.phase {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  border-bottom: 1px solid rgba(235,245,255,0.12);
+  padding: 28px 0;
+}
+.phase:first-child { padding-top: 0; }
+.phase:last-child  { border-bottom: none; }
+.phase-tag { padding-top: 3px; }
+.phase-letter {
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy-deep);
+}
+.phase-content h3 {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  letter-spacing: 0;
+}
+.phase-name {
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.phase-desc {
+  font-size: 14.5px;
+  color: rgba(235,245,255,0.75);
+  line-height: 1.7;
+}
+.phase-deliverable {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(235,245,255,0.5);
+  line-height: 1.6;
+  padding-left: 12px;
+  border-left: 2px solid rgba(240,185,20,0.35);
+}
+.phase-deliverable strong { color: var(--gold); font-weight: 600; }
+
+/* ── MDM BROCHURE: INVOLVEMENT ───────────────────────────────── */
+.involvement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+.involvement-card {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  padding: 28px 24px;
+}
+.involvement-card h3 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy-mid);
+  margin-bottom: 12px;
+}
+.involvement-card p { font-size: 14.5px; line-height: 1.75; }
+
+/* ── MDM BROCHURE: DELIVERABLES ──────────────────────────────── */
+.deliverables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+.deliverable-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  background: var(--white);
+  border: 1px solid rgba(40,68,113,0.12);
+}
+.deliverable-icon {
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.deliverable-item p { font-size: 14.5px; line-height: 1.7; }
+
+/* ── MDM BROCHURE: WHY GRID ──────────────────────────────────── */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 40px;
+}
+.why-card {
+  background: var(--navy-mid);
+  padding: 32px 28px;
+}
+.why-card h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+.why-card p { font-size: 14.5px; color: rgba(235,245,255,0.78); line-height: 1.75; }
+
+/* ── MDM BROCHURE: ABOUT BLOCK ───────────────────────────────── */
+.about-block {
+  background: var(--navy-deep);
+  padding: 64px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.about-block::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gold);
+}
+.about-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 64px;
+  align-items: center;
+}
+.about-text h2 { font-size: 26px; font-weight: 300; color: var(--white); margin-bottom: 20px; }
+.about-text p  { font-size: 15px; color: rgba(235,245,255,0.78); line-height: 1.8; }
+.about-cta {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(240,185,20,0.3);
+  padding: 36px 32px;
+  text-align: center;
+}
+.about-cta p { font-size: 14px; color: rgba(235,245,255,0.65); margin-bottom: 20px; line-height: 1.65; }
+.cta-link {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-deep);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 28px;
+}
+.cta-link:hover { background: var(--white); }
+
+/* ── MDM BROCHURE: HERO VARIANTS ─────────────────────────────── */
+.hero-inner  { max-width: 960px; margin: 0 auto; position: relative; z-index: 1; }
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero-tagline {
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.15;
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+.hero-tagline em { font-style: normal; color: var(--gold); font-weight: 500; }
+.hero-body {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(235,245,255,0.82);
+  line-height: 1.75;
+  max-width: 620px;
+}
+h2.light { color: var(--white); }
+
 /* ── FOOTER ──────────────────────────────────────────────────── */
 .site-footer {
   background: var(--navy-deep);
@@ -478,6 +711,14 @@ p:last-child { margin-bottom: 0; }
   .service-card      { border-right: none; }
   .team-grid         { grid-template-columns: 1fr; gap: 40px; }
   .form-row          { grid-template-columns: 1fr; }
+  .pillars           { grid-template-columns: 1fr; }
+  .pillar            { border-right: none; border-bottom: 2px solid var(--navy-deep); }
+  .pillar:last-child { border-bottom: none; }
+  .involvement-grid  { grid-template-columns: 1fr; }
+  .why-grid          { grid-template-columns: 1fr; }
+  .about-inner       { grid-template-columns: 1fr; }
+  .phase             { grid-template-columns: 56px 1fr; }
+  .hero-tagline      { font-size: 30px; }
 }
 
 @media (max-width: 640px) {
@@ -488,6 +729,7 @@ p:last-child { margin-bottom: 0; }
   .page-header,
   .logo-strip,
   .cta-strip,
+  .about-block,
   .site-footer { padding-left: 24px; padding-right: 24px; }
 
   h1 { font-size: 1.9rem; }
