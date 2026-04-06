@@ -32,67 +32,65 @@ permalink: /services/mdm-readiness/
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── HEADER ─────────────────────────────────────────── */
-  .header {
+  /* ── NAV ────────────────────────────────────────────── */
+  .site-nav {
     background: var(--navy-deep);
-    padding: 0;
-    position: relative;
-    overflow: hidden;
+    border-bottom: 4px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
-  .header::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 4px;
-    background: var(--gold);
-  }
-
-  .header-inner {
+  .site-nav__inner {
     max-width: 960px;
     margin: 0 auto;
-    padding: 48px 48px 52px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: end;
-    gap: 32px;
-  }
-
-  .brand {
+    padding: 0 48px;
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
   }
 
-  .brand-name {
-    font-size: 22px;
-    font-weight: 300;
-    color: var(--white);
-    letter-spacing: 0.04em;
-    text-transform: lowercase;
+  .site-nav__logo {
+    height: 36px;
+    width: auto;
   }
 
-  .brand-name strong {
-    font-weight: 700;
-    color: var(--gold);
+  .site-nav__brand {
+    display: flex;
+    align-items: center;
   }
 
-  .brand-url {
-    font-size: 12px;
-    color: var(--navy-light);
-    font-weight: 400;
-    letter-spacing: 0.06em;
+  .site-nav__links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
   }
 
-  .header-label {
-    font-size: 11px;
+  .site-nav__links a {
+    font-size: 0.78rem;
     font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 0.14em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    text-align: right;
-    line-height: 1.6;
+    color: rgba(255,255,255,0.72);
+    padding: 8px 0;
+    display: block;
+    text-decoration: none;
   }
+  .site-nav__links a:hover,
+  .site-nav__links a.active { color: var(--gold); }
+
+  .site-nav__toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255,255,255,0.75);
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 4px;
+  }
+  .site-nav__toggle:hover { color: var(--gold); }
 
   /* ── HERO ────────────────────────────────────────────── */
   .hero {
@@ -468,13 +466,13 @@ permalink: /services/mdm-readiness/
   }
 
   /* ── FOOTER ──────────────────────────────────────────── */
-  .footer {
+  .site-footer {
     background: var(--navy-deep);
-    border-top: 1px solid rgba(255,255,255,0.07);
-    padding: 24px 48px;
+    border-top: 4px solid var(--gold);
+    padding: 28px 48px;
   }
 
-  .footer-inner {
+  .site-footer__inner {
     max-width: 960px;
     margin: 0 auto;
     display: flex;
@@ -482,23 +480,22 @@ permalink: /services/mdm-readiness/
     align-items: center;
   }
 
-  .footer-brand {
-    font-size: 13px;
+  .site-footer__brand {
+    font-size: 0.85rem;
     font-weight: 300;
-    color: rgba(235,245,255,0.45);
+    color: rgba(255,255,255,0.4);
     text-transform: lowercase;
-    letter-spacing: 0.04em;
   }
 
-  .footer-brand strong {
+  .site-footer__brand strong {
     color: rgba(240,185,20,0.7);
     font-weight: 600;
   }
 
-  .footer-url {
-    font-size: 12px;
-    color: rgba(235,245,255,0.3);
-    letter-spacing: 0.06em;
+  .site-footer__copy {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.04em;
   }
 
   /* ── DIVIDERS ────────────────────────────────────────── */
@@ -538,28 +535,44 @@ permalink: /services/mdm-readiness/
   }
 
   @media (max-width: 680px) {
-    .header-inner, .hero, .section { padding-left: 24px; padding-right: 24px; }
+    .site-nav__inner { padding: 0 24px; }
+    .site-nav__toggle { display: block; }
+    .site-nav__links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 68px;
+      left: 0; right: 0;
+      background: var(--navy-mid);
+      padding: 16px 24px;
+      gap: 0;
+    }
+    .site-nav__links.is-open { display: flex; }
+    .hero, .section { padding-left: 24px; padding-right: 24px; }
     .pillars, .involvement-grid, .why-grid, .about-inner { grid-template-columns: 1fr; }
     .hero-tagline { font-size: 30px; }
     .phase { grid-template-columns: 56px 1fr; }
+    .site-footer { padding: 24px; }
+    .site-footer__inner { flex-direction: column; gap: 8px; text-align: center; }
   }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="header-inner">
-    <div class="brand">
-      <div class="brand-name">above and beyond <strong>data</strong></div>
-      <div class="brand-url">abovebeyonddata.com</div>
-    </div>
-    <div class="header-label">
-      Engagement Overview<br>
-      Master Data Readiness
-    </div>
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a href="/" class="site-nav__brand">
+      <img src="/assets/images/abd-logo.png" alt="Above and Beyond Data" class="site-nav__logo">
+    </a>
+    <button class="site-nav__toggle" aria-label="Toggle menu" id="nav-toggle">&#9776;</button>
+    <ul class="site-nav__links" id="nav-links">
+      <li><a href="/services/" class="active">Services</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
   </div>
-</header>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -739,12 +752,18 @@ permalink: /services/mdm-readiness/
 </div>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">above and beyond <strong>data</strong> llc</div>
-    <div class="footer-url">abovebeyonddata.com</div>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">above and beyond <strong>data</strong> llc</div>
+    <div class="site-footer__copy">&copy; 2026 Above and Beyond Data LLC</div>
   </div>
 </footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    document.getElementById('nav-links').classList.toggle('is-open');
+  });
+</script>
 
 </body>
 </html>
