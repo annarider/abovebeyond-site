@@ -90,6 +90,12 @@ p:last-child { margin-bottom: 0; }
   strong { font-weight: 700; color: var(--gold); }
   &:hover { color: var(--white); }
 }
+.site-nav__brand-arrow {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 400;
+  margin-right: 6px;
+}
 
 .site-nav__links {
   display: flex;
