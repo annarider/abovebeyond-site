@@ -359,67 +359,53 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 16px;
 }
 
-/* ── CONTACT ASIDE ───────────────────────────────────────────── */
-.contact-aside {
-  background: var(--ice);
-  padding: 32px 28px;
-  border-left: 4px solid var(--gold);
-}
-.contact-aside h3 {
-  color: var(--navy-deep);
-  margin-bottom: 16px;
+/* ── CONTACT SECTION (single centered column) ─────────────────── */
+.contact-section {
+  max-width: 760px;
 }
 
-/* ── CONTACT LAYOUT (form + aside) ───────────────────────────── */
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 64px;
-  align-items: start;
-}
-
-/* ── CONTACT FORM ────────────────────────────────────────────── */
-.contact-form { max-width: 600px; }
-
-.form-row {
+/* ── CONTACT CARDS (mailto cards) ─────────────────────────────── */
+.contact-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 24px;
+  margin-top: 8px;
 }
-
-.form-group { margin-bottom: 18px; }
-
-.form-group label {
+.contact-card {
   display: block;
+  padding: 32px 28px;
+  background: var(--white);
+  box-shadow: 0 1px 3px rgba(21, 36, 60, 0.06), 0 8px 24px rgba(21, 36, 60, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(21, 36, 60, 0.08), 0 16px 32px rgba(21, 36, 60, 0.1);
+  color: inherit;
+}
+.contact-card__name {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--navy-deep);
+  margin-bottom: 4px;
+}
+.contact-card__role {
   font-size: var(--text-xs);
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--navy-mid);
-  margin-bottom: 6px;
+  color: var(--navy-light);
+  margin-bottom: 16px;
 }
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid rgba(40,68,113,0.25);
-  font-family: 'Quicksand', sans-serif;
+.contact-card__email {
   font-size: var(--text-base);
-  color: var(--text-dark);
-  background: var(--white);
-  border-radius: 0;
-  appearance: none;
-  -webkit-appearance: none;
+  color: var(--navy-mid);
+  margin-bottom: 0;
+  word-break: break-all;
 }
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--navy-mid);
-  box-shadow: 0 0 0 3px rgba(40,68,113,0.1);
-}
-.form-group textarea { min-height: 120px; resize: vertical; }
+.contact-card:hover .contact-card__email { color: var(--gold); }
 
 /* ── LOGO STRIP ──────────────────────────────────────────────── */
 .logo-strip {
@@ -819,9 +805,8 @@ h2.light { color: var(--white); }
   .feature-grid      { grid-template-columns: 1fr; }
   .services-grid     { grid-template-columns: 1fr; }
   .services-extras__list { grid-template-columns: 1fr; }
-  .contact-layout    { grid-template-columns: 1fr; gap: 40px; }
+  .contact-cards     { grid-template-columns: 1fr; }
   .team-grid         { grid-template-columns: 1fr; gap: 40px; }
-  .form-row          { grid-template-columns: 1fr; }
   .pillars           { grid-template-columns: 1fr; }
   .involvement-grid  { grid-template-columns: 1fr; }
   .why-grid          { grid-template-columns: 1fr; }
