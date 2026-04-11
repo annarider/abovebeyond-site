@@ -55,10 +55,13 @@ p  { font-size: var(--text-base); line-height: 1.8; color: var(--text-mid); marg
 p:last-child { margin-bottom: 0; }
 
 /* ── LAYOUT ──────────────────────────────────────────────────── */
-.container {
+/* Single inner-wrapper convention. Used inside any padded outer
+   (.section, .page-header, .hero, .cta-strip, etc.). The outer
+   provides the horizontal padding; this just constrains width. */
+.container,
+.section__inner {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 48px;
 }
 
 /* ── NAV ─────────────────────────────────────────────────────── */
@@ -238,11 +241,6 @@ p:last-child { margin-bottom: 0; }
 .section--dark { background: var(--navy-deep); }
 .section--mid  { background: var(--navy-mid); }
 
-.section__inner {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .eyebrow {
   font-size: var(--text-xs);
   font-weight: 700;
@@ -357,11 +355,6 @@ p:last-child { margin-bottom: 0; }
   color: var(--navy-mid);
   margin-top: 40px;
   margin-bottom: 16px;
-}
-
-/* ── CONTACT SECTION (single centered column) ─────────────────── */
-.contact-section {
-  max-width: 760px;
 }
 
 /* ── CONTACT CARDS (mailto cards) ─────────────────────────────── */
