@@ -315,7 +315,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--navy-light);
   margin-bottom: 14px;
 }
-.team-member p  { font-size: var(--text-base); line-height: 1.8; margin-bottom: 0.75rem; }
+.team-member p  { font-size: var(--text-base); line-height: 1.8; margin-bottom: 0.75rem; text-align: left; }
 .team-member a  { color: var(--navy-mid); font-weight: 600; }
 .team-member a:hover { color: var(--gold); }
 
@@ -411,7 +411,7 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 28px;
 }
 .logo-strip img {
-  max-width: 420px;
+  max-width: 640px;
   height: auto;
   margin: 0 auto;
   opacity: 0.55;
